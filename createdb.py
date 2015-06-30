@@ -1,6 +1,6 @@
 #---------------------------------------------------------------
 #    程序：CIQ2k查询数据库
-#    版本：0.0.2
+#    版本：0.0.3
 #    作者：懒秀才
 #    日期：2014-05-28
 #    语言：Python 3
@@ -20,15 +20,16 @@
 #          insertEntry()		导入入境表数据(追加)[ok]2014-05-28
 #          insertExitDisq()		导入出境检验不合格表数据(追加)[ok]2014-05-28
 #          insertEntryDisq()	导入入境检验不合格表数据(追加)[ok]2014-05-28
-#          insertCert()			导入出境签证表数据(追加)[ok]2014-05-28
+#          insertCert()			导入签证表数据(追加)[ok]2014-05-28
 #          insertEntrySit()		导入入境疫情表数据(追加)[ok]2014-05-30
 #          insertCon()			导入集装箱表数据(追加)[ok]2014-05-30
 #          insertExitProd()		导入出境生产企业表数据(追加)[ok]2014-05-30
 #          insertBasicDb()		创建基础数据表
 #---------------------------------------------------------------
 
-# 0.0.2 2014-05-30 增加创建基础数据表
-# 0.0.2 2014-05-30 追加表数据引入更新计数器
+# 0.0.2 2014-05-30	增加创建基础数据表
+# 0.0.2 2014-05-30	追加表数据引入更新计数器
+# 0.0.3 2015-06-30	修改追加数据导入文本文件名
 
 
 
@@ -556,7 +557,7 @@ def createExitProd():
 #-----------------------------------
 def insertExit():
 	connectCiq2KMdb()
-	data = open('out.txt')
+	data = open('出境.txt')
 	lines = data.readlines()
 	data.close()
 	l_list = lines[1:] # 从第二行开始
@@ -592,7 +593,7 @@ def insertExit():
 #-----------------------------------
 def insertEntry():
 	connectCiq2KMdb()
-	data = open('out.txt')
+	data = open('入境.txt')
 	lines = data.readlines()
 	data.close()
 	l_list = lines[1:] # 从第二行开始
@@ -629,7 +630,7 @@ def insertEntry():
 #-----------------------------------
 def insertExitDisq():
 	connectCiq2KMdb()
-	data = open('out.txt')
+	data = open('出境不合格.txt')
 	lines = data.readlines()
 	data.close()
 	l_list = lines[1:] # 从第二行开始
@@ -666,7 +667,7 @@ def insertExitDisq():
 #-----------------------------------
 def insertEntryDisq():
 	connectCiq2KMdb()
-	data = open('out.txt')
+	data = open('入境不合格.txt')
 	lines = data.readlines()
 	data.close()
 	l_list = lines[1:] # 从第二行开始
@@ -697,11 +698,11 @@ def insertEntryDisq():
 	
 	
 #-----------------------------------
-#    功能：导入出境签证表数据(追加)
+#    功能：导入签证表数据(追加)
 #-----------------------------------
 def insertCert():
 	connectCiq2KMdb()
-	data = open('out.txt')
+	data = open('签证.txt')
 	lines = data.readlines()
 	data.close()
 	l_list = lines[1:] # 从第二行开始
@@ -734,7 +735,7 @@ def insertCert():
 #-----------------------------------
 def insertEntrySit():
 	connectCiq2KMdb()
-	data = open('out.txt')
+	data = open('入境疫情.txt')
 	lines = data.readlines()
 	data.close()
 	l_list = lines[1:] # 从第二行开始
@@ -770,7 +771,7 @@ def insertEntrySit():
 #-----------------------------------
 def insertCon():
 	connectCiq2KMdb()
-	data = open('out.txt')
+	data = open('集装箱.txt')
 	lines = data.readlines()
 	data.close()
 	l_list = lines[1:] # 从第二行开始
@@ -806,7 +807,7 @@ def insertCon():
 #--------------------------------------
 def insertExitProd():
 	connectCiq2KMdb()
-	data = open('out.txt')
+	data = open('出境生产企业.txt')
 	lines = data.readlines()
 	data.close()
 	l_list = lines[1:] # 从第二行开始
