@@ -583,7 +583,7 @@ def insertExit():
 		commitCount = commitCount+1
 		# 格式化数值，转换数值内容字符串为数值
 		for i_n in [29,32,36,37,40,41]:
-			decls[i_n] = float(decls[i_n]
+			decls[i_n] = float(decls[i_n])
 
 		# 格式化日期字符串，先转换字符串为日期，再格式转换为字符串
 		from datetime import datetime
@@ -619,7 +619,7 @@ def insertEntry():
 		commitCount = commitCount+1
 		# 格式化数值，转换数值内容字符串为数值
 		for i_n in [29,32,36,37,40,41,66]:
-			decls[i_n] = float(decls[i_n]
+			decls[i_n] = float(decls[i_n])
 
 		# 格式化日期字符串，先转换字符串为日期，再格式转换为字符串
 		from datetime import datetime
@@ -656,7 +656,7 @@ def insertExitDisq():
 		commitCount = commitCount+1
 		# 格式化数值，转换数值内容字符串为数值
 		for i_n in [29,32,36,37,40,41,61]:
-			decls[i_n] = float(decls[i_n]
+			decls[i_n] = float(decls[i_n])
 
 		# 格式化日期字符串，先转换字符串为日期，再格式转换为字符串
 		from datetime import datetime
@@ -693,7 +693,7 @@ def insertEntryDisq():
 		commitCount = commitCount+1
 		# 格式化数值，转换数值内容字符串为数值
 		for i_n in [29,32,36,37,40,41,67]:
-			decls[i_n] = float(decls[i_n]
+			decls[i_n] = float(decls[i_n])
 
 		# 格式化日期字符串，先转换字符串为日期，再格式转换为字符串
 		from datetime import datetime
@@ -761,7 +761,7 @@ def insertEntrySit():
 		commitCount = commitCount+1
 		# 格式化数值，转换数值内容字符串为数值
 		for i_n in [29,32,36,37,61,62,63]:
-			decls[i_n] = float(decls[i_n]
+			decls[i_n] = float(decls[i_n])
 		
 		# 格式化日期字符串，先转换字符串为日期，再格式转换为字符串
 		from datetime import datetime
@@ -797,7 +797,7 @@ def insertCon():
 		commitCount = commitCount+1
 		# 格式化数值，转换数值内容字符串为数值
 		for i_n in [2,3,4,17,18,19]:
-			decls[i_n] = float(decls[i_n]
+			decls[i_n] = float(decls[i_n])
 		
 		# 格式化日期字符串，先转换字符串为日期，再格式转换为字符串
 		from datetime import datetime
